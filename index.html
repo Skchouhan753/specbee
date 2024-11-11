@@ -1,65 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-   <link rel="stylesheet" href="./styles/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
     <section class="featured-speakers">
-        <div class="speakers-container">
-          <div class="speakers-content">
-            <header class="speakers-header">
-              <h2 class="speakers-title">View our Featured Speakers for the Event</h2>
-              <p class="speakers-description">Speakers are core contributors and industry thought leaders working at <span style="color: #003fb4;">companies</span> that push for innovation.</p>
-            </header>
-            <div class="speaker-cards">
-              
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/992a5a08d37132e00df55a2455081d67f1b2b3a3dfc1c53ef790857c25e7f283?placeholderIfAbsent=true&apiKey=74199a2312b1446fb7cf219015e79026" alt="" class="carousel-btn" />
-              
-              <article class="speaker-card">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/81d3cc60bee318877cbca2ac10d575b201a679836e0a3c905b80adee0a4b8bed?placeholderIfAbsent=true&apiKey=74199a2312b1446fb7cf219015e79026" alt="John Doe" class="speaker-image" />
-                <div class="speaker-info">
-                  <h3 class="speaker-name">John Doe</h3>
-                  <p class="speaker-position">Chief Marketing Officer</p>
-                  <p class="speaker-company">Acme Corp</p>
-                </div>
-              </article>
-              <article class="speaker-card">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b9792630088ea46c0c69ac242b6bd74a722cdbe5a312b7e939d464fc6ee9f1f1?placeholderIfAbsent=true&apiKey=74199a2312b1446fb7cf219015e79026" alt="John Doe" class="speaker-image" />
-                <div class="speaker-info">
-                  <h3 class="speaker-name">John Doe</h3>
-                  <p class="speaker-position">Chief Engagement Officer</p>
-                  <p class="speaker-company">Acquia</p>
-                </div>
-              </article>
-              <article class="speaker-card">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b95c789ef5067ddab750c8160212d80a793856626ecedc95363550a8a99d805d?placeholderIfAbsent=true&apiKey=74199a2312b1446fb7cf219015e79026" alt="John Doe" class="speaker-image" />
-                <div class="speaker-info">
-                  <h3 class="speaker-name">John Doe</h3>
-                  <p class="speaker-position">Chief Technical Developer</p>
-                  <p class="speaker-company">Pantheon</p>
-                </div>
-              </article>
-              <article class="speaker-card">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4441967e6d11bece83feb9f94fdd75d6e4d301491cd2555ffdcd7e666cb95ea4?placeholderIfAbsent=true&apiKey=74199a2312b1446fb7cf219015e79026" alt="John Doe" class="speaker-image" />
-                <div class="speaker-info">
-                  <h3 class="speaker-name">John Doe</h3>
-                  <p class="speaker-position">Chief Marketing Officer</p>
-                  <p class="speaker-company">Specbee</p>
-                </div>
-              </article>
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2793ef8cd7d119a47e2fa57220a972c5f70c22499c638af95854ff403a0921b2?placeholderIfAbsent=true&apiKey=74199a2312b1446fb7cf219015e79026" alt="" class="carousel-btn" />
-            </div>
+      <div class="speakers-container">
+        <div class="speakers-content">
+          <header class="speakers-header">
+            <h2 class="speakers-title">
+              View our Featured Speakers for the Event
+            </h2>
+            <p class="speakers-description">
+              Speakers are core contributors and industry thought leaders
+              working at <span style="color: #003fb4">companies</span> that push
+              for innovation.
+            </p>
+          </header>
+          <div id="container">
+
           </div>
-        
+          <div class="speaker-cards">
+            <!-- <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/992a5a08d37132e00df55a2455081d67f1b2b3a3dfc1c53ef790857c25e7f283?placeholderIfAbsent=true&apiKey=74199a2312b1446fb7cf219015e79026" alt="" class="carousel-btn" /> -->
+
+            <!-- <button class="carousel-btn">&#10094;</button> -->
+            <button class="carousel-button left" onclick="moveSlide(-1)">
+              &#10094;
+            </button>
+
+            <!-- <article class="speaker-card">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/81d3cc60bee318877cbca2ac10d575b201a679836e0a3c905b80adee0a4b8bed?placeholderIfAbsent=true&apiKey=74199a2312b1446fb7cf219015e79026"
+                alt="John Doe"
+                class="speaker-image"
+              />
+              <div class="speaker-info">
+                <h3 class="speaker-name">John Doe</h3>
+                <p class="speaker-position">Chief Marketing Officer</p>
+                <p class="speaker-company">Acme Corp</p>
+              </div>
+            </article>
+            <article class="speaker-card">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/81d3cc60bee318877cbca2ac10d575b201a679836e0a3c905b80adee0a4b8bed?placeholderIfAbsent=true&apiKey=74199a2312b1446fb7cf219015e79026"
+                alt="John Doe"
+                class="speaker-image"
+              />
+              <div class="speaker-info">
+                <h3 class="speaker-name">John Doe</h3>
+                <p class="speaker-position">Chief Marketing Officer</p>
+                <p class="speaker-company">Acme Corp</p>
+              </div>
+            </article>
+            <article class="speaker-card">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/b95c789ef5067ddab750c8160212d80a793856626ecedc95363550a8a99d805d?placeholderIfAbsent=true&apiKey=74199a2312b1446fb7cf219015e79026"
+                alt="John Doe"
+                class="speaker-image"
+              />
+              <div class="speaker-info">
+                <h3 class="speaker-name">John Doe</h3>
+                <p class="speaker-position">Chief Technical Developer</p>
+                <p class="speaker-company">Pantheon</p>
+              </div>
+            </article>
+            <article class="speaker-card">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/4441967e6d11bece83feb9f94fdd75d6e4d301491cd2555ffdcd7e666cb95ea4?placeholderIfAbsent=true&apiKey=74199a2312b1446fb7cf219015e79026"
+                alt="John Doe"
+                class="speaker-image"
+              />
+              <div class="speaker-info">
+                <h3 class="speaker-name">John Doe</h3>
+                <p class="speaker-position">Chief Marketing Officer</p>
+                <p class="speaker-company">Specbee</p>
+              </div>
+            </article> -->
+
+
+            <div class="carousel-container">
+              <div class="carousel-slides" id="carousel-slides"></div>
+            </div>
+
+
+            <!-- <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/2793ef8cd7d119a47e2fa57220a972c5f70c22499c638af95854ff403a0921b2?placeholderIfAbsent=true&apiKey=74199a2312b1446fb7cf219015e79026"
+              alt=""
+              class="carousel-btn"
+            /> -->
+            <!-- <button class="carousel-btn">&#10095;</button> -->
+            <button class="carousel-button right" onclick="moveSlide(1)">
+              &#10095;
+            </button>
+          </div>
         </div>
-        <div class="cta-container">
-          <p class="cta-text">Click here to see the full program</p>
-          <button class="cta-button">See the Program</button>
-        </div>
-        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f4fa9774178233ca81f0e9a86ba2e4a29b117045955b085f25d8256d2ca36bf?placeholderIfAbsent=true&apiKey=74199a2312b1446fb7cf219015e79026" alt="Event logo" class="logo" />
-      </section>
-</body>
+      </div>
+      <div class="cta-container">
+        <p class="cta-text">Click here to see the full program</p>
+        <button class="cta-button">See the Program</button>
+      </div>
+      <img
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f4fa9774178233ca81f0e9a86ba2e4a29b117045955b085f25d8256d2ca36bf?placeholderIfAbsent=true&apiKey=74199a2312b1446fb7cf219015e79026"
+        alt="Event logo"
+        class="logo"
+      />
+    </section>
+  </body>
 </html>
+<script src="script.js"></script>
